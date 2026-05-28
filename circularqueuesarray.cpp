@@ -16,3 +16,11 @@ bool isFull() {
         return false;
     }
 }
+
+bool isEmpty() {
+    if (antrian.front == -1 && antrian.rear == -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
