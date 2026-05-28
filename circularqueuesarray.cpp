@@ -101,4 +101,15 @@ void display() {
 int main() {
     int pilih;
     
-    
+    while (true) {
+        system("cls");
+        cout << "=== MENU QUEUE ===" << endl;
+        cout << "1. Enqueue (Tambah data)" << endl;
+        cout << "2. Dequeue (Hapus data)" << endl;
+        cout << "3. Display (Lihat data)" << endl;
+        cout << "4. Clear (Bersihkan data)" << endl;
+        cout << "5. Keluar" << endl;
+        cout << "Pilih menu: ";
+        cin >> pilih;
+        
+        
