@@ -67,3 +67,8 @@ void dequeue() {
     }
 }
 
+void clear() {
+    antrian.front = -1;
+    antrian.rear = -1;
+    cout << "Antrian dibersihkan!" << endl;
+}
