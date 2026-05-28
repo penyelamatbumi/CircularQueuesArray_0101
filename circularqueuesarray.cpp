@@ -89,4 +89,12 @@ void display() {
             }
         }
         
-    
+        // Menampilkan data yang ada di dalam antrian secara terbalik (dari rear ke front)
+        for (int i = antrian.rear; i >= antrian.front; i--) {
+            cout << "- " << antrian.nama_array[i] << endl;
+        }
+        
+        cout << endl;
+    }
+}
+
