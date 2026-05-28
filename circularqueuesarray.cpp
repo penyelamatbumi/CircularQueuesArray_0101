@@ -112,4 +112,29 @@ int main() {
         cout << "Pilih menu: ";
         cin >> pilih;
         
-        
+        switch (pilih) {
+            case 1:
+                enqueue();
+                system("pause");
+                break;
+            case 2:
+                dequeue();
+                system("pause");
+                break;
+            case 3:
+                display();
+                system("pause");
+                break;
+            case 4:
+                clear();
+                system("pause");
+                break;
+            case 5:
+                cout << "Terima kasih!" << endl;
+                return 0;
+            default:
+                cout << "Pilihan tidak valid!" << endl;
+                system("pause");
+                break;
+        }
+  
