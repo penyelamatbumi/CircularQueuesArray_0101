@@ -9,3 +9,10 @@ struct Queue {
     int rear = -1;
 } antrian;
 
+bool isFull() {
+    if (antrian.rear == MAX - 1) {
+        return true;
+    } else {
+        return false;
+    }
+}
