@@ -72,3 +72,21 @@ void clear() {
     antrian.rear = -1;
     cout << "Antrian dibersihkan!" << endl;
 }
+
+void display() {
+    if (isEmpty()) {
+        cout << "Antrian kosong." << endl;
+    } else {
+        cout << "Data Antrian: " << endl;
+        
+        // Menampilkan sisa ruang kosong dalam bentuk tanda koma
+        if (antrian.rear < MAX - 1) {
+            int count_kosong = MAX - 1 - antrian.rear;
+            
+            while (count_kosong > 0) {
+                cout << "- (Kosong)" << endl;
+                count_kosong--;
+            }
+        }
+        
+    
